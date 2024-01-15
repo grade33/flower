@@ -12,7 +12,7 @@
 
 .header_menu_item,
 
-.header_menu_item1,
+.header_menu_item1,page_404_title
 
 .header_menu_item2,
 
@@ -2190,6 +2190,24 @@ body {
 
 }
 
+/*-- THANKS --*/
+
+.page_thanks_inside {
+  padding: 10.42vw 0;
+  text-align: center;
+}
+.page_thanks_title {
+  font-size: 2.60vw;
+  font-weight: 600;
+  margin-bottom: 0.16vw;
+
+}
+.page_thanks_desc {
+  margin-bottom: 1.56vw;
+  font-size: 0.94vw;
+  font-weight: 400;
+
+}
 
 
 /*-- LOYALTY --*/
