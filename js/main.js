@@ -37,6 +37,11 @@ $(document).ready(function () {
     },
   });
 
+
+  flatpickr("#datetimePicker", {
+    dateFormat: "d.m.Y", 
+  });
+
   $(".magnificPopup").magnificPopup({
     callbacks: {
       open: function () {
@@ -51,9 +56,23 @@ $(document).ready(function () {
   $(".header_search_link").on("click", function (e) {
     e.preventDefault();
 
-    $(this).parent().toggleClass("active");
+    $(this).parent().addClass("active");
     
-    $(".result_block").toggleClass("active");
+    $(".result_block").addClass("active");
+
+    $(".result_block").height($(".result_block").next().height());
+
+    setTimeout(() => {
+      $('.flowerss__input')[0].focus()
+    }, 100);
+  });
+
+    $(".flowerss__btn--close").on("click", function (e) {
+    e.preventDefault();
+
+    $(".header_search_link").parent().removeClass("active");
+    
+    $(".result_block").removeClass("active");
 
     $(".result_block").height($(".result_block").next().height());
   });

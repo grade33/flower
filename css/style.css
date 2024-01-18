@@ -3352,7 +3352,6 @@ form *:focus {
 
   position: relative;
 
-  padding-left: 4.69vw;
   padding-right: 60px;
 }
 
@@ -3766,7 +3765,12 @@ form *:focus {
 }
 
 .footer {
+  margin-top: -1px;
   background-image: url(../img/bg_footer.svg);
+}
+
+.footer_checkout {
+  min-height: 428px;
 }
 
 .product_hint_link {
@@ -5748,6 +5752,13 @@ form *:focus {
 }
 
 @media screen and (max-width: 540px) {
+  .modal-footer {
+    flex-direction: column !important;
+  }
+  .modal-footer>* {
+    flex: 1 1 auto !important;
+    width: 100%;
+  }
   .container {
     padding: 0 16px;
   }
@@ -6014,6 +6025,11 @@ form *:focus {
   .header_info {
     width: 30%;
   }
+
+  #modal-user2 .modal-footer p a {
+    font-size: 13px;
+    padding: 10px 5px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -6238,9 +6254,9 @@ form *:focus {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-size: 13px;
   background-color: #000;
-  padding: 10px 5px;
+  font-size: 18px;
+  padding: 18px 5px;
   border: 2px solid transparent;
   display: block;
 }
