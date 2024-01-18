@@ -37,7 +37,6 @@ $(document).ready(function () {
     },
   });
 
-
   flatpickr("#datetimePicker", {
     dateFormat: "d.m.Y", 
   });
