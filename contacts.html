@@ -4,7 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link
@@ -313,7 +316,8 @@
                         <ul class="nothidden_menu">
                           <li>
                             <a href="#" class="hidden_menu_link"
-                              ><span>букеты</span> <img src="img/arr-r.svg" alt=""
+                              ><span>букеты</span>
+                              <img src="img/arr-r.svg" alt=""
                             /></a>
                             <ul>
                               <li>
@@ -350,7 +354,8 @@
                           </li>
                           <li>
                             <a href="#" class="hidden_menu_link"
-                              ><span>по цвету</span> <img src="img/arr-r.svg" alt=""
+                              ><span>по цвету</span>
+                              <img src="img/arr-r.svg" alt=""
                             /></a>
                             <ul>
                               <li>
@@ -413,8 +418,11 @@
         <div class="container">
           <div class="result_inner">
             <div class="flowerss">
-              
-              <input class="flowerss__input" type="text" placeholder="набор цветов" />
+              <input
+                class="flowerss__input"
+                type="text"
+                placeholder="набор цветов"
+              />
               <button class="flowerss__btn flowerss__btn--close" type="button">
                 <svg
                   width="40"
@@ -460,7 +468,7 @@
       <div class="main contacts_page">
         <div class="container">
           <div class="contacts_cols d_flex f_wrap">
-            <div class="contacts_col_left">
+            <div class="contacts_col_left contacts_page__content">
               <h1 class="title_bk">Контакты</h1>
               <div class="contacts_info">
                 <table class="contacts_info_table">
@@ -536,7 +544,7 @@
                   </tr>
                 </table>
               </div>
-              <div class="contacts_info">
+              <div class="contacts_info contacts_info-last">
                 <table class="contacts_info_table">
                   <tr>
                     <td>юр. лицо</td>
@@ -628,13 +636,16 @@
                 </svg>
               </a>
             </div>
-            <div class="footer_copyright">
+            <div class="footer_copyright footer_copyright_desktop">
               2024 © FLOWER LANGUAGE все права защищены.
             </div>
             <div class="footer_payment">
               <img src="img/icon_footer_payment.svg" alt="" />
             </div>
-          </div>
+                      </div>
+           <div class="footer_copyright footer_copyright_mobile">
+              2024 © FLOWER LANGUAGE все права защищены.
+            </div>
         </div>
       </footer>
     </div>
@@ -679,11 +690,11 @@
             },
             {
               // Добавляем пользовательскую иконку
-            iconLayout: 'default#image',
-            iconImageHref: './img/logo.svg', // Ссылка на вашу иконку
-            iconImageSize: [35, 35], // Размеры иконки
-            iconImageOffset: [-17, -17], // Смещение относительно точки привязки
-            iconContentLayout: MyIconContentLayout,
+              iconLayout: "default#image",
+              iconImageHref: "./img/logo.svg", // Ссылка на вашу иконку
+              iconImageSize: [35, 35], // Размеры иконки
+              iconImageOffset: [-17, -17], // Смещение относительно точки привязки
+              iconContentLayout: MyIconContentLayout,
             }
           );
 

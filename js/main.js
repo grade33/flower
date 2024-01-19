@@ -337,17 +337,81 @@ $(document).ready(function () {
     });
   }
 
-  const basicSlider = document.querySelector(".basic_slider");
+  const basicSliderProduct = document.querySelector(".basic_slider_products");
 
-  if (basicSlider != null) {
-    $(".basic_slider").each(function () {
+  if (basicSliderProduct != null) {
+    $(".basic_slider_products").each(function () {
       var prevArr = $(this)
-        .parents(".basic_slider_wrapper")
-        .find(".basic_slider_nav--arr_left")[0];
+        .parents(".basic_slider_products_wrapper")
+        .find(".basic_slider_products_nav--arr_left")[0];
 
       var nextArr = $(this)
-        .parents(".basic_slider_wrapper")
-        .find(".basic_slider_nav--arr_right")[0];
+        .parents(".basic_slider_products_wrapper")
+        .find(".basic_slider_products_nav--arr_right")[0];
+
+      new Swiper($(this)[0], {
+        slidesPerView: 4,
+
+        slidesPerGroup: 4,
+
+        spaceBetween: 60,
+
+        pagination: {
+          el: $(this)
+            .parents(".basic_slider_wrapper")
+            .find(".basic_slider_dots")[0],
+
+          clickable: true,
+        },
+
+        navigation: {
+          prevEl: prevArr,
+
+          nextEl: nextArr,
+        },
+
+        breakpoints: {
+          1025: {
+            slidesPerView: 4,
+
+            lidesPerGroup: 4,
+
+            spaceBetween: 60,
+          },
+
+          769: {
+            slidesPerView: 3,
+
+            lidesPerGroup: 3,
+
+            spaceBetween: 30,
+          },
+
+          0: {
+            slidesPerView: 2,
+
+            lidesPerGroup: 2,
+
+            spaceBetween: 20,
+          },
+        },
+
+        watchSlidesVisibility: true,
+      });
+    });
+  }
+
+  const basicSliderReview = document.querySelector(".basic_slider_review");
+
+  if (basicSliderReview != null) {
+    $(".basic_slider_review").each(function () {
+      var prevArr = $(this)
+        .parents(".basic_slider_review_wrapper")
+        .find(".basic_slider_review_nav--arr_left")[0];
+
+      var nextArr = $(this)
+        .parents(".basic_slider_review_wrapper")
+        .find(".basic_slider_review_nav--arr_right")[0];
 
       new Swiper($(this)[0], {
         slidesPerView: 4,
@@ -400,6 +464,72 @@ $(document).ready(function () {
       });
     });
   }
+
+
+  const reviewSlider = document.querySelector(".review_slider");
+
+  if (reviewSlider != null) {
+    $(".review_slider").each(function () {
+      var prevArr = $(this)
+        .parents(".review_slider_wrapper")
+        .find(".review_slider_nav--arr_left")[0];
+
+      var nextArr = $(this)
+        .parents(".review_slider_wrapper")
+        .find(".review_slider_nav--arr_right")[0];
+
+      new Swiper($(this)[0], {
+        slidesPerView: 4,
+
+        slidesPerGroup: 4,
+
+        spaceBetween: 60,
+
+        pagination: {
+          el: $(this)
+            .parents(".review_slider_wrapper")
+            .find(".review_slider_dots")[0],
+
+          clickable: true,
+        },
+
+        navigation: {
+          prevEl: prevArr,
+
+          nextEl: nextArr,
+        },
+
+        breakpoints: {
+          1025: {
+            slidesPerView: 4,
+
+            lidesPerGroup: 4,
+
+            spaceBetween: 60,
+          },
+
+          769: {
+            slidesPerView: 3,
+
+            lidesPerGroup: 3,
+
+            spaceBetween: 30,
+          },
+
+          0: {
+            slidesPerView: 2,
+
+            lidesPerGroup: 2,
+
+            spaceBetween: 20,
+          },
+        },
+
+        watchSlidesVisibility: true,
+      });
+    });
+  }
+
 
   // const mdlSlider = $(".modal-body_slider");
 
