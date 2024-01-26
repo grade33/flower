@@ -2865,7 +2865,11 @@ body .btn_sticky * {
     display: none;
   }
 }
-
+.footer_payment-wrap {
+  width: 25%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
 .footer_payment {
   font-size: 0;
 
@@ -5421,7 +5425,8 @@ form *:focus {
     order: 1;
   }
 
-  .footer_payment {
+  .footer_payment-wrap {
+
     margin-bottom: 25px;
   }
 
@@ -6306,7 +6311,7 @@ form *:focus {
 #modal-user2 {
   padding: 30px 0 0;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width: 581px) {
   #modal-user2 {
     overflow: hidden; 
     position: absolute; 
@@ -6333,8 +6338,8 @@ form *:focus {
   height: auto;
 }
 .modal-body {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .modal-body_slider {
   position: relative;
@@ -6562,7 +6567,7 @@ form *:focus {
   overflow: hidden;
   overflow-y: auto;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1300px) {
   .modal-body {
     padding-left: 20px;
     padding-right: 20px;
