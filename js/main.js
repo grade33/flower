@@ -394,7 +394,7 @@ $(document).ready(function () {
         },
 
         breakpoints: {
-          1025: {
+          1301: {
             slidesPerView: 4,
 
             slidesPerGroup: 4,
@@ -458,7 +458,7 @@ $(document).ready(function () {
         },
 
         breakpoints: {
-          1025: {
+          1301: {
             slidesPerView: 4,
 
             slidesPerGroup: 4,
@@ -508,7 +508,7 @@ $(document).ready(function () {
         },
 
         breakpoints: {
-          1025: {
+          1301: {
             slidesPerView: 4,
 
             slidesPerGroup: 4,

@@ -4137,7 +4137,7 @@ form *:focus {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .row_form_fields {
     grid-template-columns: 1fr;
   }
@@ -5468,7 +5468,7 @@ form *:focus {
   max-width: 16px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .mobile_header_wrapper {
     padding-top: 45px;
   }
@@ -6125,7 +6125,7 @@ form *:focus {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .header_number,
   .header_info {
     width: 30%;
@@ -6456,8 +6456,10 @@ form *:focus {
 .modal-buy__checkbox {
   margin-top: 24px;
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 1000px;
+  }
   .modal-title {
     color: #000;
 
