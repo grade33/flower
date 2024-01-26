@@ -2311,7 +2311,7 @@ body .btn_sticky * {
 }
 
 .form_col_left {
-  padding-right: 120px;
+  padding-right: 60px;
 
   width: calc(100% - 420.096px);
 }
@@ -2334,7 +2334,7 @@ body .btn_sticky * {
   border-radius: 0;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-  font-size: 18.048px;
+  font-size: 18px;
 
   font-weight: 400;
 
@@ -2356,7 +2356,7 @@ body .btn_sticky * {
 .form_field_input input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 
-  font-size: 13.056000000000001px;
+  font-size: 12px;
 
   font-weight: 400;
 }
@@ -2364,7 +2364,7 @@ body .btn_sticky * {
 .form_field_input input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.5);
 
-  font-size: 13.056000000000001px;
+  font-size: 12px;
 
   font-weight: 400;
 }
@@ -2372,7 +2372,7 @@ body .btn_sticky * {
 .form_field_input input:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 
-  font-size: 13.056000000000001px;
+  font-size: 12px;
 
   font-weight: 400;
 }
@@ -2380,7 +2380,7 @@ body .btn_sticky * {
 .form_field_input input:-moz-placeholder {
   color: rgba(0, 0, 0, 0.5);
 
-  font-size: 13.056000000000001px;
+  font-size: 12px;
 
   font-weight: 400;
 }
